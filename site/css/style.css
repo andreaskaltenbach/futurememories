@@ -1,0 +1,21 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background: #000;
+    height: 100%;
+}
+
+#logo {
+    margin: auto;
+}
+
+.vjs-control-bar {
+    display: none;
+}
+
+.vid {
+    position: absolute;
+    top: 50%;
+    margin-top: -80px;
+    width: 100%;
+}

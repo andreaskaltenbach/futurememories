@@ -1,0 +1,26 @@
+{
+  "name": "futurememories",
+  "title": "Future Memories",
+  "description": "Future Memories Corporate Site",
+  "version": "0.1.0",
+  "homepage": "www.futurememories.se",
+  "author": {
+    "name": "Andreas Kaltenbach",
+    "email": "andreas@futurememories.se"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/andreaskaltenbach/site.git"
+  },
+  "bugs": "https://github.com/andreaskaltenbach/site/issues",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "www.futurememories.se/blob/master/LICENSE-MIT"
+    }
+  ],
+  "dependencies": {
+    "jquery": "*"
+  },
+  "keywords": []
+}

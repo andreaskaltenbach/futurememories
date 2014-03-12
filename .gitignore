@@ -1,0 +1,10 @@
+site/node_modules/
+
+.jshintrc
+
+.idea/
+*.iml
+
+site/bower_components
+site/dist
+site/libs

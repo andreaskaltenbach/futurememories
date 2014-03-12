@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Future Memories</title>
+  <meta name="description" content="Future Memories - "/>
+  <meta name="author" content="Andreas Kaltenbach"/>
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bower_components/BigVideo.js/css/bigvideo.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container vid">
+  <div class="row">
+    <div class="col-md-12">
+      <img id="logo" src="images/Fmem-logo-color-wide-whiteText-transparent.png" class="img-responsive"></div>
+  </div>
+</div>
+
+
+<!-- bower:js -->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/jquery-ui/ui/jquery-ui.js"></script>
+<script src="bower_components/video.js/video.js"></script>
+<script src="bower_components/eventEmitter/EventEmitter.js"></script>
+<script src="bower_components/eventie/eventie.js"></script>
+<script src="bower_components/imagesloaded/imagesloaded.js"></script>
+<script src="bower_components/BigVideo.js/lib/bigvideo.js"></script>
+<!-- endbower -->
+<script src="bower_components/modernizr/modernizr.js"></script>
+
+<!-- Demo -->
+<script>
+  var BV;
+  $(function () {
+    // initialize BigVideo
+    BV = new $.BigVideo();
+    BV.init();
+
+    if (Modernizr.touch) {
+      BV.show('images/14391_space_mission_space_shuttle_space_shuttle_launch.jpg');
+    } else {
+      BV.show('http://vimeo.com/9340504/download?t=1394660583&v=15591122&s=562d92edd5e1f91609b02497e0860306', {ambient : true});
+    }
+
+
+  });
+</script>
+
+</body>
+</html>
