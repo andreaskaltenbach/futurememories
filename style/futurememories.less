@@ -1,11 +1,17 @@
 @import "../bower_components/bootstrap/less/bootstrap.less";
 
+html,
+body {
+    height: 100%;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+
 body {
     background-color: #000;
     background: url("../assets/Background-tile-512x512.jpg") repeat;
-    color: #fff;
-    font-family: 'Lato', sans-serif;
-    text-align: center;
 }
 
 h1 {
@@ -16,7 +22,6 @@ h2 {
 
     font-size: 13pt;
     line-height: 16pt;
-
 }
 
 a {
@@ -28,27 +33,27 @@ a:hover {
 }
 
 #landing-gradient {
-    background: -moz-linear-gradient(top,  rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.8)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0) 100%); /* IE10+ */
-    background: linear-gradient(to bottom,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0) 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.8)), color-stop(100%, rgba(0, 0, 0, 0))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cc000000', endColorstr='#00000000', GradientType=0); /* IE6-9 */
 
-    position:fixed;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 #logo {
-    padding: 60px 0 20px 0;
+    padding: 0 0 0 0;
 }
 
 #name {
-    padding: 20px 0;
+    padding: 30px 0 14px 0;
 }
 
 .site-wrapper {
@@ -73,15 +78,21 @@ a:hover {
 }
 
 .contact {
-    margin: 20px 0;
+    margin: 20px 0 30px 0;
+    font-size: 10pt;
+    line-height: 14pt;
 }
 
 .contact-left {
     text-align: right;
+    padding-left:0;
+    padding-right:15px;
 }
 
 .contact-right {
     text-align: left;
+    padding-left:15px;
+    padding-right:0px;
 }
 
 .flex {
@@ -93,9 +104,9 @@ a:hover {
 }
 
 .connect-icons {
-    margin: auto;
-    padding-top: 20px;
-    .flex;
+  margin: auto;
+  padding-top: 5px;
+ .flex;
 
     div {
 
@@ -117,7 +128,8 @@ a:hover {
     }
 
     #name {
-        padding-left: 50px;
-        padding-right: 50px;
+        padding: 30px 50px;
     }
+
+
 }
