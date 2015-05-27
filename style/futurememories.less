@@ -3,55 +3,22 @@
 @icon-font-path: "../bower_components/bootstrap/fonts/";
 @screen-lg: 1300px;
 
-.row {
-    margin-left: 0;
-    margin-right: 0;
-}
-
 .landing-container {
     .container-fluid;
     padding: 80px 2px 0px 2px;
 }
 
-// iPhone 5
-@media only screen
-and (min-device-width: 320px)
-and (max-device-width: 568px) {
-    .landing-container {
-        .container-fluid;
-        padding: 80px 2px 0px 2px;
-    }
-}
-
-// iPhone 6
-@media only screen
-and (min-device-width: 375px)
-and (max-device-width: 667px) {
-    .landing-container {
-        padding: 140px 2px 0px 2px;
-    }
-}
-
-// iPhone 6 Plus
-@media only screen
-and (min-device-width: 414px)
-and (max-device-width: 736px) {
-    .landing-container {
-        padding: 120px 2px 0px 2px;
-    }
-}
-
-.feature-row {
-    .row;
-}
-
 html,
 body {
     height: 100%;
-    color: #000;
+    color: #fff;
     background-color: #fff;
     text-align: center;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Lato', sans-serif;
+}
+
+a, a:hover {
+    color: #fff;
 }
 
 .site-wrapper {
@@ -92,10 +59,7 @@ body {
 }
 
 h1 {
-    .heading;
-    color: #fff;
-    font-weight: 400;
-    font-size: 28pt;
+    display: none;
 }
 
 h2 {
@@ -148,87 +112,31 @@ h3 {
     }
 }
 
-.white-cover {
-    background: url("../assets/iOS%20&%20Web/WhiteGradient.jpg") center repeat-x;
-    background-size: auto 100%;
-    text-align: left;
-}
-
-.black-cover {
-    background: url("../assets/iOS%20&%20Web/BackgroundVerticalTile-768.jpg") center repeat-y;
-    background-size: 100% auto;
-    text-align: right;
-    color: #fff;
-}
-
 .center {
     display: inline-block;
     vertical-align: middle;
     float: none;
 }
 
-.side-text {
-    display: none;
-}
 
-#share-buttons {
-    margin-top: 50px;
-    margin-bottom: 5px;
-    div {
-        padding: 0 15px;
-    }
-
-    img {
-        height: 28px;
-    }
-}
-
-#sharing {
-    color: #fff;
-    font-weight: 300;
+.contact {
+    margin: 20px 0 30px 0;
     font-size: 10pt;
-    opacity: 0.5;
+    line-height: 14pt;
 }
 
-footer {
-    .black-cover;
-
-    padding: 20px 0;
-
-    #fmem-logo {
-        padding: 30px 0;
-    }
-
-    img {
-        margin-top: 0;
-    }
-
-    span {
-        text-align: center;
-        display: block;
-        font-weight: 300;
-        font-size: 10pt;
-        opacity: 0.5;
-
-    }
-
-    .connect-icons {
-        margin: auto;
-        padding-top: 20px;
-        .flex;
-
-        div {
-
-            margin: 0 auto;
-            a {
-                margin: auto 10px;
-                display: inline-block;
-                vertical-align: middle;
-                width: 30px;
-            }
-        }
-    }
+.contact-left {
+    text-align: right;
+    padding-left: 0;
+    padding-right: 15px;
 }
+
+.contact-right {
+    text-align: left;
+    padding-left: 15px;
+    padding-right: 0px;
+}
+
 
 .flex {
     display: -webkit-box;
@@ -238,197 +146,29 @@ footer {
     display: flex;
 }
 
+.connect-icons {
+    margin: auto;
+    padding-top: 5px;
+    .flex;
+
+    div {
+
+        margin: 0 auto;
+        a {
+            margin: auto 10px;
+            display: inline-block;
+            vertical-align: middle;
+            width: 30px;
+        }
+    }
+}
+
 @media (min-width: @screen-sm) {
 
-    .black-cover, footer {
-        background: url("../assets/iOS%20&%20Web/BackgroundTile.jpg") top left repeat-x;
-        background-size: auto 100%;
-    }
 
-    #landing {
-        //background-image: url("../assets/iOS%20&%20Web/Background-lg.jpg");
-    }
-
-    h1 {
-        font-size: 30pt;
-    }
-
-    h2 {
-        font-size: 20pt;
-        line-height: 26pt;
-    }
-
-    h3 {
-        font-size: 30pt;
-        line-height: 36pt;
-        padding-bottom: 15px;
-        padding-top: 10px;
-    }
-
-    .feature-row {
-        .flex;
-    }
-
-    .side-text {
-        margin: auto 0;
-
-        span {
-            display: block;
-            margin: 10px 0 24px 0;
-            font-size: 20pt;
-            font-weight: 300;
-        }
-    }
-
-    .headings {
-        padding: 4;
-    }
-
-    .landing-container {
-        padding: 140px 2px 0px 2px;
-    }
-
-    #landing-buttons img {
-        width: 102px;
-        height: 30px;
-    }
-
-    #logo {
-        width: 124px;
-        height: 124px;
-    }
-
-    .feature-row {
-        .center-text {
-            display: none;
-        }
-    }
-
-    .white-cover h3,
-    .white-cover span {
-        text-align: left;
-        display: block;
-        padding-left: 20px;
-
-    }
-
-    .black-cover h3,
-    .black-cover span {
-        text-align: right;
-        display: block;
-        margin-right: 60px;
-    }
-
-    .side-text {
-        display: block;
-    }
-
-    #share-buttons {
-        div {
-            padding: 0 10px;
-        }
-    }
-
-    footer span {
-        font-size: 18pt;
-    }
-
-    #apple-watch-scoring {
-        margin-bottom: 25px;
-        margin-top: 0px;
-        padding-right: 50px;
-    }
-
-    .white-cover img {
-        margin-top: 25px;
-        margin-right: -20px;
-    }
-
-    .black-cover img {
-        margin-left: -60px;
-    }
 }
 
 @media (min-width: @screen-lg) {
 
-    h1 {
-        font-size: 38pt;
-    }
 
-    h2 {
-        font-size: 24pt;
-        line-height: 30pt;
-    }
-
-    .headings {
-        padding: 70px;
-    }
-
-    .landing-container {
-        padding: 150px 2px 0px 2px;
-    }
-
-    #landing-buttons img {
-        width: 205px;
-        height: 61px;
-    }
-
-    #logo {
-        width: 248px;
-        height: 248px;
-    }
-
-    #share-buttons {
-        bottom: 40px;
-        position: absolute;
-        width: 100%;
-    }
-
-    #sharing {
-        bottom: 15px;
-        position: absolute;
-        width: 100%;
-        font-size: 12pt;
-    }
-}
-
-/* ---------------------------------- */
-
-#video-overlay {
-    z-index: 111;
-    background-color: #000;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-
-    .video-frame {
-        display: table;
-        height: 100%;
-        width: 100%;
-
-        .iframe-holder {
-            display: table-cell;
-            height: 100%;
-            vertical-align: middle;
-        }
-
-        iframe {
-            max-width: 100%;
-        }
-    }
-
-    #close-video {
-        position: fixed;
-        background-color: #111A19;
-        padding: 8px;
-        top: 3px;
-        left: 3px;
-        font-size: 14pt;
-
-        a {
-            color: #ffffff;
-        }
-
-    }
 }
