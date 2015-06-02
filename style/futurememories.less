@@ -103,7 +103,6 @@ h2 {
         height: 25%;
         padding-top: 3%;
         padding-bottom: 1%;
-
     }
 
     .name {
@@ -124,7 +123,6 @@ h2 {
     }
 
     .contact {
-
         font-size: 3.08vh;
         line-height: 3.58vh;
     }
@@ -143,7 +141,7 @@ h2 {
 
 @media (min-width: @screen-sm) {
 
-    #landing {
+    .landing-wrapper {
         background-image: url("../assets/desktop/Background-992x1080.jpg");
     }
 
@@ -156,16 +154,35 @@ h2 {
     }
 
     h2 {
+
+        font-size: 3vh;
+        padding-top: 2%;
+        padding-bottom: 2%;
+
         br {
             display: none;
         }
     }
 
+    .logo {
+        height: 45.5%;
+        margin-top: 2.5%;
+        margin-bottom: 0.67%;
+    }
+
+    .name {
+        height: 6.6%;
+    }
+
+    .contact {
+        font-size: 1.9vh;
+        line-height: 2.5vh;
+    }
 }
 
 @media (min-width: @screen-md) {
 
-    #landing {
+    .landing-wrapper {
         background-image: url("../assets/desktop/Background-1200x1080.jpg");
     }
 
@@ -173,7 +190,7 @@ h2 {
 
 @media (min-width: @screen-lg) {
 
-    #landing {
+    .landing-wrapper {
         background-image: url("../assets/desktop/Background-1920x1080.jpg");
     }
 
