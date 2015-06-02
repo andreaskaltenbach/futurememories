@@ -42,7 +42,6 @@ a, a:hover {
 
 }
 
-
 h1 {
     display: none;
 }
@@ -73,19 +72,15 @@ h2 {
 .contact-left {
     text-align: right;
     padding-left: 0;
-    //padding-right: 15px;
 }
 
 .contact-right {
     text-align: left;
-    //padding-left: 15px;
     padding-right: 0;
 }
 
-
 .connect-icons {
-    //padding-top: @icons-top-padding;
-    margin-top: 5.4%;
+    padding-top: 5.4%;
 
     div {
         margin: 0 auto;
@@ -102,8 +97,48 @@ h2 {
     display: none;
 }
 
-.feature-row {
-    .row;
+@media only screen and (orientation: landscape) {
+
+    .logo {
+        height: 25%;
+        padding-top: 3%;
+        padding-bottom: 1%;
+
+    }
+
+    .name {
+        height: 4.6%;
+        margin-bottom: 1%;
+    }
+
+    h2 {
+        color: #fff;
+        font-size: 4.5vh;
+        line-height: 5.0vh;
+        padding-top: 0%;
+        padding-bottom: 1%;
+
+        br {
+            display: none;
+        }
+    }
+
+    .contact {
+
+        font-size: 3.08vh;
+        line-height: 3.58vh;
+    }
+
+    .connect-icons {
+        padding-top: 3.4%;
+
+        div {
+            a {
+                margin: auto 2%;
+                width: 4%;
+            }
+        }
+    }
 }
 
 @media (min-width: @screen-sm) {
@@ -126,14 +161,6 @@ h2 {
         }
     }
 
-    .logo {
-        width: 90%;
-    }
-
-    .name {
-        width: 80%;
-    }
-
 }
 
 @media (min-width: @screen-md) {
@@ -142,13 +169,6 @@ h2 {
         background-image: url("../assets/desktop/Background-1200x1080.jpg");
     }
 
-    .logo {
-        width: 70%;
-    }
-
-    .name {
-        width: 60%;
-    }
 }
 
 @media (min-width: @screen-lg) {
@@ -157,11 +177,4 @@ h2 {
         background-image: url("../assets/desktop/Background-1920x1080.jpg");
     }
 
-    .logo {
-        width: 60%;
-    }
-
-    .name {
-        width: 55%;
-    }
 }
