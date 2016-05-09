@@ -9,7 +9,7 @@ $section-padding-desktop: 70px 115px
 $case-heading-heading-spacing: 11px
 $case-heading-separator-spacing: 22px
 
-$font-scale-factor: 0.12
+$font-scale-factor: 0.09
 
 @mixin font-size($designSize)
   font-size: $designSize*$font-scale-factor+vmin
@@ -25,6 +25,11 @@ $font-scale-factor: 0.12
 @mixin background($image, $horizontal, $vertical)
   background: url('../assets/desktop/#{$image}') no-repeat $horizontal $vertical
   background-size: cover
+
+@mixin img-responsive
+  display: block
+  max-width: 100%
+  height: auto
 
 html, body
   height: 100%
@@ -43,10 +48,15 @@ section
   display: flex
   flex-direction: column
   justify-content: space-between
-  min-height: 80%
+  //min-height: 50%
   padding: $section-padding
   @media only screen and (min-width: $threshold)
     padding: $section-padding-desktop
+
+  visuals
+    margin: 115px auto
+    img
+      @include img-responsive()
 
 heading
 
@@ -76,10 +86,6 @@ heading
     padding: 0
     margin: $case-heading-heading-spacing 0 $case-heading-separator-spacing 0
 
-@mixin img-responsive
-  display: block
-  max-width: 100%
-  height: auto
 
 summary
 
@@ -133,10 +139,6 @@ img
 
 #preera
   background-color: #E8E8E8
-
-  visuals img
-    @include img-responsive()
-    margin: 115px auto
 
 #mhn
   @include background('mhn.jpg', left, bottom)

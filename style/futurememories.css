@@ -16,11 +16,16 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 80%;
   padding: 10px 30px; }
   @media only screen and (min-width: 500px) {
     section {
       padding: 70px 115px; } }
+  section visuals {
+    margin: 115px auto; }
+    section visuals img {
+      display: block;
+      max-width: 100%;
+      height: auto; }
 
 heading separator-white, heading separator-black {
   width: 93px;
@@ -32,7 +37,7 @@ heading separator-black {
 heading h3 {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 4.8vmin;
+  font-size: 3.6vmin;
   letter-spacing: 4px;
   text-transform: uppercase;
   padding: 0;
@@ -40,7 +45,7 @@ heading h3 {
 heading h4 {
   font-family: "Raleway", sans-serif;
   font-weight: 200;
-  font-size: 4.32vmin;
+  font-size: 3.24vmin;
   letter-spacing: 4px;
   text-transform: uppercase;
   padding: 0;
@@ -53,7 +58,7 @@ summary > div {
   summary > div description {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
-    font-size: 2.4vmin;
+    font-size: 1.8vmin;
     max-width: 50%;
     display: flex;
     flex-direction: column;
@@ -85,11 +90,6 @@ summary > div {
 
 #preera {
   background-color: #E8E8E8; }
-  #preera visuals img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin: 115px auto; }
 
 #mhn {
   background: url("../assets/desktop/mhn.jpg") no-repeat left bottom;
