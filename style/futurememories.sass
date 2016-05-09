@@ -40,7 +40,11 @@ h1
 
 h2
   @include raleway(800)
+  @include font-size(23)
+  text-align: center
+  padding-top: 5%
   text-transform: uppercase
+  letter-spacing: 2px
   color: $white
   opacity: 0.15
 
@@ -48,7 +52,6 @@ section
   display: flex
   flex-direction: column
   justify-content: space-between
-  //min-height: 50%
   padding: $section-padding
   @media only screen and (min-width: $threshold)
     padding: $section-padding-desktop
@@ -132,6 +135,18 @@ img
 
 #futurememories
   background-color: $black
+  display : flex
+  align-items: center
+  justify-content: space-around
+
+  min-height: 70%
+
+
+
+  logo
+    img
+      @include img-responsive
+
 
 #railway
   @include background('SKF_BG.jpg', right, bottom)

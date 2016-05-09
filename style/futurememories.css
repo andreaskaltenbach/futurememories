@@ -8,7 +8,11 @@ h1 {
 h2 {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
+  font-size: 2.07vmin;
+  text-align: center;
+  padding-top: 5%;
   text-transform: uppercase;
+  letter-spacing: 2px;
   color: #fff;
   opacity: 0.15; }
 
@@ -81,7 +85,15 @@ summary > div {
       margin: 0 2%; }
 
 #futurememories {
-  background-color: #101519; }
+  background-color: #101519;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 70%; }
+  #futurememories logo img {
+    display: block;
+    max-width: 100%;
+    height: auto; }
 
 #railway {
   background: url("../assets/desktop/SKF_BG.jpg") no-repeat right bottom;
