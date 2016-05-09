@@ -1,0 +1,145 @@
+$threshold: 500px
+
+$white: #fff
+$black: #101519
+
+$section-padding: 10px 30px
+$section-padding-desktop: 70px 115px
+
+$case-heading-heading-spacing: 11px
+$case-heading-separator-spacing: 22px
+
+$font-scale-factor: 0.12
+
+@mixin font-size($designSize)
+  font-size: $designSize*$font-scale-factor+vmin
+
+@mixin raleway($weight)
+  font-family: 'Raleway', sans-serif
+  font-weight: $weight
+
+@mixin roboto($weight)
+  font-family: 'Roboto', sans-serif
+  font-weight: $weight
+
+@mixin background($image, $horizontal, $vertical)
+  background: url('../assets/desktop/#{$image}') no-repeat $horizontal $vertical
+  background-size: cover
+
+html, body
+  height: 100%
+  margin: 0
+
+h1
+  display: none
+
+h2
+  @include raleway(800)
+  text-transform: uppercase
+  color: $white
+  opacity: 0.15
+
+section
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  min-height: 80%
+  padding: $section-padding
+  @media only screen and (min-width: $threshold)
+    padding: $section-padding-desktop
+
+heading
+
+  separator-white
+    width: 93px
+    display: block
+    border-bottom: 3px solid $white
+    border-color: $white
+
+  separator-black
+    @extend  separator-white
+    border-color: $black
+
+  h3
+    @include raleway(700)
+    @include font-size(40)
+    letter-spacing: 4px
+    text-transform: uppercase
+    padding: 0
+    margin: 0
+
+  h4
+    @include raleway(200)
+    @include font-size(36)
+    letter-spacing: 4px
+    text-transform: uppercase
+    padding: 0
+    margin: $case-heading-heading-spacing 0 $case-heading-separator-spacing 0
+
+@mixin img-responsive
+  display: block
+  max-width: 100%
+  height: auto
+
+summary
+
+  > div
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+
+    description
+      @include roboto(300)
+      @include font-size(20)
+      max-width: 50%
+      display: flex
+      flex-direction: column
+      justify-content: flex-end
+
+      strong
+        @include roboto(400)
+
+    platforms
+      width: 50%
+      align-self: flex-end
+
+      .desktop
+        max-width: 40%
+
+      .ipad
+        max-width: 27.5%
+
+      .android
+        max-width: 10%
+
+      .iphone
+        max-width: 10%
+
+      img
+        margin: 0 2%
+  // width: 20%
+   //display: table-cell
+
+img
+//
+
+
+#futurememories
+  background-color: $black
+
+#railway
+  @include background('SKF_BG.jpg', right, bottom)
+  color: $white
+
+#preera
+  background-color: #E8E8E8
+
+  visuals img
+    @include img-responsive()
+    margin: 115px auto
+
+#mhn
+  @include background('mhn.jpg', left, bottom)
+  color: $white
+
+
