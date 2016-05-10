@@ -2,6 +2,7 @@ $threshold: 500px
 
 $white: #fff
 $black: #101519
+$gray: #E8E8E8
 
 $section-padding: 10px 30px
 $section-padding-desktop: 70px 115px
@@ -9,10 +10,10 @@ $section-padding-desktop: 70px 115px
 $case-heading-heading-spacing: 11px
 $case-heading-separator-spacing: 22px
 
-$font-scale-factor: 0.09
+$font-scale-factor: 0.1
 
 @mixin font-size($designSize)
-  font-size: $designSize*$font-scale-factor+vmin
+  font-size: $designSize*$font-scale-factor+vmax
 
 @mixin raleway($weight)
   font-family: 'Raleway', sans-serif
@@ -70,7 +71,7 @@ heading
     border-color: $white
 
   separator-black
-    @extend  separator-white
+    @extend separator-white
     border-color: $black
 
   h3
@@ -88,7 +89,6 @@ heading
     text-transform: uppercase
     padding: 0
     margin: $case-heading-heading-spacing 0 $case-heading-separator-spacing 0
-
 
 summary
 
@@ -126,8 +126,8 @@ summary
 
       img
         margin: 0 2%
-  // width: 20%
-   //display: table-cell
+// width: 20%
+ //display: table-cell
 
 img
 //
@@ -135,7 +135,7 @@ img
 
 #futurememories
   background-color: $black
-  display : flex
+  display: flex
   align-items: center
   justify-content: space-around
   padding-top: 0
@@ -147,6 +147,39 @@ img
     img
       @include img-responsive
 
+#ourteam
+
+  padding: 0
+  background-color: $gray
+  overflow: hidden
+
+  cards
+
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: flex-start
+    transform: rotateZ(18deg)
+
+
+    card
+      -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1)
+      -moz-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1)
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1)
+      //padding: 12%
+      width: 50%
+      transform: rotateX(28deg) rotateY(25deg) rotateZ(-13deg)
+      display: flex
+      flex-direction: column
+      background-color: $white
+
+      name
+        @include raleway(600)
+        @include font-size(40)
+
+      role
+        @include raleway(200)
+        @include font-size(30)
 
 #railway
   @include background('SKF_BG.jpg', right, bottom)
@@ -158,5 +191,7 @@ img
 #mhn
   @include background('mhn.jpg', left, bottom)
   color: $white
+
+
 
 
