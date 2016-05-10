@@ -89,7 +89,9 @@ summary > div {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  min-height: 70%; }
+  padding-top: 0;
+  padding-bottom: 0;
+  min-height: 100%; }
   #futurememories logo img {
     display: block;
     max-width: 100%;
