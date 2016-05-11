@@ -1,17 +1,16 @@
-$threshold: 500px
+$threshold: 800px
 
 $white: #fff
 $black: #101519
 $gray: #E8E8E8
 
-$section-padding: 10px 30px
+$section-padding: 70px 70px
 $section-padding-desktop: 70px 115px
 
 $case-heading-heading-spacing: 11px
 $case-heading-separator-spacing: 22px
 
 $font-scale-factor: 0.07
-
 
 @mixin font-size($designSize)
   font-size: $designSize*$font-scale-factor+vmax
@@ -48,15 +47,17 @@ h2
   text-transform: uppercase
   letter-spacing: 2px
   color: $white
+
   opacity: 0.15
 
 section
   display: flex
   flex-direction: column
   justify-content: space-between
-  padding: $section-padding
-  @media only screen and (min-width: $threshold)
-    padding: $section-padding-desktop
+  padding: $section-padding-desktop
+  // compact mode
+  @media screen and (orientation: portrait), screen and (max-width: $threshold)
+    padding: $section-padding
 
   visuals
     margin: 115px auto
@@ -98,6 +99,7 @@ summary
     flex-direction: row
     justify-content: space-between
 
+
     description
       @include roboto(300)
       @include font-size(20)
@@ -117,22 +119,45 @@ summary
       width: 50%
       align-self: flex-end
 
-      .desktop
-        max-width: 40%
 
-      .ipad
-        max-width: 27.5%
 
-      .android
-        max-width: 10%
+      // extended mode mode
+      @media screen and (orientation: landscape) and (min-width: $threshold)
+        .desktop
+          max-width: 40%
 
-      .iphone
-        max-width: 10%
+        .ipad
+          max-width: 27.5%
 
-      img
-        margin: 0 2%
-// width: 20%
- //display: table-cell
+        .android
+          max-width: 10%
+
+        .iphone
+          max-width: 10%
+
+        img
+          margin: 0 2%
+
+    // compact mode
+    @media screen and (orientation: portrait), screen and (max-width: $threshold)
+      flex-direction: column-reverse
+      description
+        @include font-size(24)
+        max-width: none
+
+      platforms
+        max-width: none
+        width: inherit
+        align-self: center
+
+
+        img
+          //  margin: auto
+          //display: block
+
+
+
+
 
 img
 //

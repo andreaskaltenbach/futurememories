@@ -20,10 +20,10 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 10px 30px; }
-  @media only screen and (min-width: 500px) {
+  padding: 70px 115px; }
+  @media screen and (orientation: portrait), screen and (max-width: 800px) {
     section {
-      padding: 70px 115px; } }
+      padding: 70px 70px; } }
   section visuals {
     margin: 115px auto; }
     section visuals img {
@@ -76,16 +76,27 @@ summary > div {
   summary > div platforms {
     width: 50%;
     align-self: flex-end; }
-    summary > div platforms .desktop {
-      max-width: 40%; }
-    summary > div platforms .ipad {
-      max-width: 27.5%; }
-    summary > div platforms .android {
-      max-width: 10%; }
-    summary > div platforms .iphone {
-      max-width: 10%; }
-    summary > div platforms img {
-      margin: 0 2%; }
+    @media screen and (orientation: landscape) and (min-width: 800px) {
+      summary > div platforms .desktop {
+        max-width: 40%; }
+      summary > div platforms .ipad {
+        max-width: 27.5%; }
+      summary > div platforms .android {
+        max-width: 10%; }
+      summary > div platforms .iphone {
+        max-width: 10%; }
+      summary > div platforms img {
+        margin: 0 2%; } }
+  @media screen and (orientation: portrait), screen and (max-width: 800px) {
+    summary > div {
+      flex-direction: column-reverse; }
+      summary > div description {
+        font-size: 1.68vmax;
+        max-width: none; }
+      summary > div platforms {
+        max-width: none;
+        width: inherit;
+        align-self: center; } }
 
 #futurememories {
   background-color: #101519;
