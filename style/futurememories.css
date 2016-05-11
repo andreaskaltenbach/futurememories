@@ -29,7 +29,7 @@ section {
       height: auto; }
   @media screen and (orientation: portrait), screen and (max-width: 800px) {
     section {
-      padding: 70px 70px; }
+      padding: 10% 10%; }
       section visuals {
         margin: 70px auto; } }
 
@@ -104,7 +104,10 @@ summary > div {
         align-self: center;
         margin-top: 70px; }
         summary > div platforms img {
-          margin: 0 10px; } }
+          margin: 0 10px;
+          display: block;
+          max-width: 100%;
+          height: auto; } }
 
 #futurememories {
   background-color: #101519;
