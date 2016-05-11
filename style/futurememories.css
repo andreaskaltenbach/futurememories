@@ -180,6 +180,7 @@ hire {
     font-weight: 200;
     font-size: 1.4vmax;
     text-transform: uppercase;
+    letter-spacing: 2px;
     margin: 56px 0; }
     hire roles role {
       margin: 0 5%;
