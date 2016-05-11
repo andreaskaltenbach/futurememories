@@ -55,14 +55,20 @@ section
   flex-direction: column
   justify-content: space-between
   padding: $section-padding-desktop
-  // compact mode
-  @media screen and (orientation: portrait), screen and (max-width: $threshold)
-    padding: $section-padding
 
   visuals
     margin: 115px auto
     img
       @include img-responsive()
+
+  // compact mode
+  @media screen and (orientation: portrait), screen and (max-width: $threshold)
+    padding: $section-padding
+
+    visuals
+      margin: 70px auto
+
+
 
 heading
 
@@ -92,6 +98,12 @@ heading
     padding: 0
     margin: $case-heading-heading-spacing 0 $case-heading-separator-spacing 0
 
+  // compact mode
+  @media screen and (orientation: portrait), screen and (max-width: $threshold)
+    h3, h4
+      @include font-size(66)
+
+
 summary
 
   > div
@@ -119,8 +131,6 @@ summary
       width: 50%
       align-self: flex-end
 
-
-
       // extended mode mode
       @media screen and (orientation: landscape) and (min-width: $threshold)
         .desktop
@@ -142,26 +152,17 @@ summary
     @media screen and (orientation: portrait), screen and (max-width: $threshold)
       flex-direction: column-reverse
       description
-        @include font-size(24)
+        @include font-size(40)
         max-width: none
 
       platforms
         max-width: none
         width: inherit
         align-self: center
-
+        margin-top: 70px
 
         img
-          //  margin: auto
-          //display: block
-
-
-
-
-
-img
-//
-
+          margin: 0 10px
 
 #futurememories
   background-color: $black

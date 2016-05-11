@@ -21,15 +21,17 @@ section {
   flex-direction: column;
   justify-content: space-between;
   padding: 70px 115px; }
-  @media screen and (orientation: portrait), screen and (max-width: 800px) {
-    section {
-      padding: 70px 70px; } }
   section visuals {
     margin: 115px auto; }
     section visuals img {
       display: block;
       max-width: 100%;
       height: auto; }
+  @media screen and (orientation: portrait), screen and (max-width: 800px) {
+    section {
+      padding: 70px 70px; }
+      section visuals {
+        margin: 70px auto; } }
 
 heading separator-white, heading separator-black {
   width: 93px;
@@ -54,6 +56,9 @@ heading h4 {
   text-transform: uppercase;
   padding: 0;
   margin: 11px 0 22px 0; }
+@media screen and (orientation: portrait), screen and (max-width: 800px) {
+  heading h3, heading h4 {
+    font-size: 4.62vmax; } }
 
 summary > div {
   display: flex;
@@ -91,12 +96,15 @@ summary > div {
     summary > div {
       flex-direction: column-reverse; }
       summary > div description {
-        font-size: 1.68vmax;
+        font-size: 2.8vmax;
         max-width: none; }
       summary > div platforms {
         max-width: none;
         width: inherit;
-        align-self: center; } }
+        align-self: center;
+        margin-top: 70px; }
+        summary > div platforms img {
+          margin: 0 10px; } }
 
 #futurememories {
   background-color: #101519;
