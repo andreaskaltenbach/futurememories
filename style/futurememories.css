@@ -8,7 +8,7 @@ h1 {
 h2 {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
-  font-size: 2.3vmax;
+  font-size: 1.61vmax;
   text-align: center;
   padding-top: 5%;
   text-transform: uppercase;
@@ -41,7 +41,7 @@ heading separator-black {
 heading h3 {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 4vmax;
+  font-size: 2.8vmax;
   letter-spacing: 4px;
   text-transform: uppercase;
   padding: 0;
@@ -49,7 +49,7 @@ heading h3 {
 heading h4 {
   font-family: "Raleway", sans-serif;
   font-weight: 200;
-  font-size: 3.6vmax;
+  font-size: 2.52vmax;
   letter-spacing: 4px;
   text-transform: uppercase;
   padding: 0;
@@ -62,11 +62,14 @@ summary > div {
   summary > div description {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
-    font-size: 2vmax;
+    font-size: 1.4vmax;
+    line-height: 145%;
     max-width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end; }
+    summary > div description p {
+      margin: 5% 0 0 0; }
     summary > div description strong {
       font-family: "Roboto", sans-serif;
       font-weight: 400; }
@@ -119,11 +122,11 @@ summary > div {
       #ourteam cards card name {
         font-family: "Raleway", sans-serif;
         font-weight: 600;
-        font-size: 4vmax; }
+        font-size: 2.8vmax; }
       #ourteam cards card role {
         font-family: "Raleway", sans-serif;
         font-weight: 200;
-        font-size: 3vmax; }
+        font-size: 2.1vmax; }
 
 #railway {
   background: url("../assets/desktop/SKF_BG.jpg") no-repeat right bottom;
