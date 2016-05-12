@@ -60,7 +60,9 @@ section {
     section {
       padding: 10% 10%; }
       section visuals {
-        margin: 70px auto; } }
+        margin: 70px auto; }
+      section clear-space {
+        margin: 34px; } }
 
 heading separator-white, heading separator-black {
   width: 93px;
@@ -104,7 +106,8 @@ summary > div {
         font-size: 3.5vw;
         max-width: none; }
       summary > div platforms {
-        justify-content: center; } }
+        justify-content: center;
+        padding-top: 71px; } }
 
 #futurememories {
   background-color: #101519;
@@ -258,5 +261,8 @@ hello a {
   text-decoration: none;
   text-align: center;
   letter-spacing: 4.13px; }
+  @media screen and (orientation: portrait), screen and (max-width: 800px) {
+    hello a {
+      font-size: 4.9vw; } }
 
 /*# sourceMappingURL=futurememories.css.map */
