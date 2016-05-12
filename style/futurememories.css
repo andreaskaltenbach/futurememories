@@ -207,9 +207,9 @@ hire {
     font-weight: 700;
     font-size: 1.26vw;
     letter-spacing: 2px;
-    text-transform: uppercase;
-    color: white; }
+    text-transform: uppercase; }
     hire contact a {
+      color: white;
       display: inline-block;
       width: 100%;
       padding: 48px 0;
@@ -226,5 +226,29 @@ hire {
         flex-basis: 30%; }
     hire contact {
       font-size: 3.22vw; } }
+
+team {
+  display: flex;
+  flex-direction: row;
+  color: #101519;
+  justify-content: space-around;
+  padding: 124px 115px 122px; }
+  team member {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex-basis: 22.7%; }
+    team member name {
+      font-size: 1.4vw;
+      font-family: "Raleway", sans-serif;
+      font-weight: 700;
+      text-transform: uppercase; }
+    team member description {
+      font-size: 1.4vw;
+      font-family: "Roboto", sans-serif;
+      font-weight: 300;
+      padding: 24px 0 33px; }
+    team member img {
+      padding: 0 18px; }
 
 /*# sourceMappingURL=futurememories.css.map */

@@ -268,9 +268,10 @@ hire
     @include font-size(18)
     letter-spacing: 2px
     text-transform: uppercase
-    color: white
+
 
     a
+      color: white
       display: inline-block
       width: 100%
       padding: 48px 0
@@ -292,4 +293,30 @@ hire
 
     contact
       @include font-size(46)
+
+team
+  display: flex
+  flex-direction: row
+  color: $black
+  justify-content: space-around
+  padding: 124px 115px 122px
+
+  member
+    display: flex
+    flex-direction: column
+    text-align: center
+    flex-basis: 22.7%
+
+    name
+      @include font-size(20)
+      @include raleway(700)
+      text-transform: uppercase
+
+    description
+      @include font-size(20)
+      @include roboto(300)
+      padding: 24px 0 33px
+
+    img
+      padding: 0 18px
 
