@@ -293,6 +293,7 @@ team
   display: flex
   flex-direction: row
   color: $black
+  background-color: #E8E8E8
   justify-content: space-around
   padding: 124px 115px 100px
 
@@ -306,6 +307,7 @@ team
       @include font-size(20)
       @include raleway(700)
       text-transform: uppercase
+      letter-spacing: 2.05px
 
     description
       flex-grow: 2
@@ -318,6 +320,23 @@ team
 
     img
       padding: 0 18px
+
+  // compact mode
+  @media screen and (orientation: portrait), screen and (max-width: $threshold)
+    flex-direction: column
+    padding: 0 23%
+
+    member
+      border-bottom: 1px solid
+      padding: 70px 0
+
+      &:last-child
+        border-bottom: none
+
+      name
+        @include font-size(36)
+      description
+        @include font-size(35)
 
 hello
   a
