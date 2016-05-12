@@ -1,6 +1,9 @@
 html, body {
   height: 100%;
-  margin: 0; }
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased; }
 
 h1 {
   display: none; }
@@ -28,7 +31,7 @@ h3 {
 h4 {
   font-family: "Raleway", sans-serif;
   font-weight: 200;
-  font-size: 2.52vw;
+  font-size: 2.8vw;
   letter-spacing: 4px;
   text-transform: uppercase;
   padding: 0;
@@ -45,6 +48,8 @@ section {
   flex-direction: column;
   justify-content: space-between;
   padding: 70px 115px; }
+  section clear-space {
+    margin: 135px; }
   section visuals {
     margin: 115px auto; }
     section visuals img {
@@ -219,7 +224,7 @@ team {
   flex-direction: row;
   color: #101519;
   justify-content: space-around;
-  padding: 124px 115px 122px; }
+  padding: 124px 115px 100px; }
   team member {
     display: flex;
     flex-direction: column;
@@ -245,12 +250,13 @@ hello a {
   font-size: 2.8vw;
   font-family: "Raleway", sans-serif;
   font-weight: 300;
-  background-color: #101519;
+  background-color: black;
   color: #fff;
   display: inline-block;
   width: 100%;
-  padding: 30px 0 37px;
+  padding: 26px 0 32px;
   text-decoration: none;
-  text-align: center; }
+  text-align: center;
+  letter-spacing: 4.13px; }
 
 /*# sourceMappingURL=futurememories.css.map */
