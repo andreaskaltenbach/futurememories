@@ -84,19 +84,14 @@ summary > div {
       font-family: "Roboto", sans-serif;
       font-weight: 400; }
   summary > div platforms {
-    width: 50%;
-    align-self: flex-end; }
-    @media screen and (orientation: landscape) and (min-width: 800px) {
-      summary > div platforms .desktop {
-        max-width: 40%; }
-      summary > div platforms .ipad {
-        max-width: 27.5%; }
-      summary > div platforms .android {
-        max-width: 10%; }
-      summary > div platforms .iphone {
-        max-width: 10%; }
-      summary > div platforms img {
-        margin: 0 2%; } }
+    display: flex;
+    justify-content: flex-start;
+    width: 100%; }
+    summary > div platforms img {
+      max-width: 100%;
+      height: 100%;
+      align-self: flex-end;
+      padding: 0 2%; }
   @media screen and (orientation: portrait), screen and (max-width: 800px) {
     summary > div {
       flex-direction: column-reverse; }
@@ -104,15 +99,7 @@ summary > div {
         font-size: 3.5vw;
         max-width: none; }
       summary > div platforms {
-        max-width: none;
-        width: inherit;
-        align-self: center;
-        margin-top: 70px; }
-        summary > div platforms img {
-          margin: 0 10px;
-          display: block;
-          max-width: 100%;
-          height: auto; } }
+        justify-content: center; } }
 
 #futurememories {
   background-color: #101519;

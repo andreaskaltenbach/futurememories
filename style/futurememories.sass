@@ -134,25 +134,15 @@ summary
         @include roboto(400)
 
     platforms
-      width: 50%
-      align-self: flex-end
+      display: flex
+      justify-content: flex-start
+      width: 100%
 
-      // extended mode mode
-      @media screen and (orientation: landscape) and (min-width: $threshold)
-        .desktop
-          max-width: 40%
-
-        .ipad
-          max-width: 27.5%
-
-        .android
-          max-width: 10%
-
-        .iphone
-          max-width: 10%
-
-        img
-          margin: 0 2%
+      img
+        max-width: 100%
+        height: 100%
+        align-self: flex-end
+        padding: 0 2%
 
     // compact mode
     @media screen and (orientation: portrait), screen and (max-width: $threshold)
@@ -160,16 +150,11 @@ summary
       description
         @include font-size(50)
         max-width: none
-
       platforms
-        max-width: none
-        width: inherit
-        align-self: center
-        margin-top: 70px
+        justify-content: center
 
-        img
-          margin: 0 10px
-          @include img-responsive()
+
+
 
 #futurememories
   background-color: $black
