@@ -171,6 +171,32 @@ summary > div {
       background: url("../assets/compact/mhn.jpg") no-repeat center center;
       background-size: cover; } }
 
+#tenniswatch {
+  background: url("../assets/TennisWatch-BG.jpg") no-repeat center center;
+  background-size: cover;
+  color: #fff; }
+  @media screen and (orientation: portrait), screen and (max-width: 800px) {
+    #tenniswatch {
+      background: url("../assets/compact/TennisWatch-BG.jpg") no-repeat center center;
+      background-size: cover; } }
+  #tenniswatch laurel {
+    width: 120px;
+    height: 97px;
+    background: url("../assets/laurel.png") no-repeat;
+    text-align: center;
+    display: block;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 0.98vw;
+    letter-spacing: 1.34px;
+    padding-top: 18px;
+    float: left;
+    margin: 30px 20px 0 0; }
+  #tenniswatch clear-space {
+    margin: 46px; }
+  #tenniswatch description a {
+    margin-right: 50px; }
+
 hire {
   display: flex;
   flex-direction: column;

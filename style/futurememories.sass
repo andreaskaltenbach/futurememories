@@ -224,6 +224,29 @@ summary
   @include background('mhn.jpg', left, bottom)
   color: $white
 
+#tenniswatch
+  @include background('TennisWatch-BG.jpg', center, center)
+  color: $white
+
+  laurel
+    width: 120px
+    height: 97px
+    background: url('../assets/laurel.png') no-repeat
+    text-align: center
+    display: block
+    @include roboto(400)
+    @include font-size(14)
+    letter-spacing: 1.34px
+    padding-top: 18px
+    float: left
+    margin: 30px 20px 0 0
+
+  clear-space
+    margin: 46px
+
+  description a
+    margin-right: 50px
+
 hire
   display: flex
   flex-direction: column
@@ -355,3 +378,4 @@ hello
     // compact mode
     @media screen and (orientation: portrait), screen and (max-width: $threshold)
       @include font-size(70)
+
