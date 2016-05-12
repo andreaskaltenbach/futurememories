@@ -13,7 +13,7 @@ $case-heading-separator-spacing: 22px
 $font-scale-factor: 0.07
 
 @mixin font-size($designSize)
-  font-size: $designSize*$font-scale-factor+vmax
+  font-size: $designSize*$font-scale-factor+vw
 
 @mixin raleway($weight)
   font-family: 'Raleway', sans-serif
@@ -24,8 +24,13 @@ $font-scale-factor: 0.07
   font-weight: $weight
 
 @mixin background($image, $horizontal, $vertical)
-  background: url('../assets/desktop/#{$image}') no-repeat $horizontal $vertical
+  background: url('../assets/#{$image}') no-repeat $horizontal $vertical
   background-size: cover
+
+  // compact mode
+  @media screen and (orientation: portrait), screen and (max-width: $threshold)
+    background: url('../assets/compact/#{$image}') no-repeat center center
+    background-size: cover
 
 @mixin img-responsive
   display: block
@@ -45,7 +50,7 @@ h2
   text-align: center
   padding-top: 5%
   text-transform: uppercase
-  letter-spacing: 2px
+  letter-spacing: 2.4px
   color: $white
 
   opacity: 0.15
@@ -57,6 +62,22 @@ h3
   text-transform: uppercase
   padding: 0
   margin: 0
+
+h4
+  @include raleway(200)
+  @include font-size(36)
+  letter-spacing: 4px
+  text-transform: uppercase
+  padding: 0
+  margin: $case-heading-heading-spacing 0 $case-heading-separator-spacing 0
+
+// compact mode
+@media screen and (orientation: portrait), screen and (max-width: $threshold)
+  h2
+    @include font-size(38)
+
+  h3, h4
+    @include font-size(66)
 
 section
   display: flex
@@ -88,18 +109,7 @@ heading
     @extend separator-white
     border-color: $black
 
-  h4
-    @include raleway(200)
-    @include font-size(36)
-    letter-spacing: 4px
-    text-transform: uppercase
-    padding: 0
-    margin: $case-heading-heading-spacing 0 $case-heading-separator-spacing 0
 
-  // compact mode
-  @media screen and (orientation: portrait), screen and (max-width: $threshold)
-    h3, h4
-      @include font-size(66)
 
 summary
 
@@ -148,7 +158,7 @@ summary
     @media screen and (orientation: portrait), screen and (max-width: $threshold)
       flex-direction: column-reverse
       description
-        @include font-size(40)
+        @include font-size(50)
         max-width: none
 
       platforms
@@ -236,13 +246,14 @@ hire
   roles
     @include raleway(200)
     @include font-size(20)
-    text-transform: uppercase
     letter-spacing: 2px
-    margin: 56px 0
+    margin: 56px 0 0
+
 
     role
-      margin: 0 5%
       align-self: flex-end
+      flex-basis: 12%
+
 
       div
         margin: 12px 0
@@ -259,3 +270,15 @@ hire
     text-transform: uppercase
     color: white
     padding: 48px 0
+
+  // compact mode
+  @media screen and (orientation: portrait), screen and (max-width: $threshold)
+    roles
+      @include font-size(40)
+
+      role
+        flex-basis: 30%
+
+    contact
+      @include font-size(46)
+
