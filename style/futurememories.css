@@ -244,10 +244,13 @@ team {
       font-weight: 700;
       text-transform: uppercase; }
     team member description {
+      flex-grow: 2;
       font-size: 1.4vw;
       font-family: "Roboto", sans-serif;
       font-weight: 300;
       padding: 24px 0 33px; }
+    team member a {
+      text-decoration: none; }
     team member img {
       padding: 0 18px; }
 
