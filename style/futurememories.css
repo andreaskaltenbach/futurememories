@@ -277,7 +277,7 @@ team {
     display: flex;
     flex-direction: column;
     text-align: center;
-    flex-basis: 22.7%; }
+    flex-basis: 25%; }
     team member name {
       font-size: 1.4vw;
       font-family: "Raleway", sans-serif;
