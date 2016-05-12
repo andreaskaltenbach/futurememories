@@ -269,7 +269,18 @@ hire
     letter-spacing: 2px
     text-transform: uppercase
     color: white
-    padding: 48px 0
+
+    a
+      display: inline-block
+      width: 100%
+      padding: 48px 0
+      text-decoration: none
+
+      &:hover
+        background-color: #000
+        color: #0087CF
+        -webkit-transition: all .5s ease!important
+        transition: all .5s ease!important
 
   // compact mode
   @media screen and (orientation: portrait), screen and (max-width: $threshold)

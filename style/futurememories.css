@@ -208,8 +208,17 @@ hire {
     font-size: 1.26vw;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: white;
-    padding: 48px 0; }
+    color: white; }
+    hire contact a {
+      display: inline-block;
+      width: 100%;
+      padding: 48px 0;
+      text-decoration: none; }
+      hire contact a:hover {
+        background-color: #000;
+        color: #0087CF;
+        -webkit-transition: all 0.5s ease !important;
+        transition: all 0.5s ease !important; }
   @media screen and (orientation: portrait), screen and (max-width: 800px) {
     hire roles {
       font-size: 2.8vw; }
