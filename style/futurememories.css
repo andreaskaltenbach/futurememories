@@ -206,7 +206,8 @@ summary > div {
     #tenniswatch laurels {
       justify-content: center; }
       #tenniswatch laurels laurel {
-        margin-top: 108px; }
+        margin: 108px 10px 0 10px;
+        font-size: 1.68vw; }
     #tenniswatch clear-space {
       margin: 26px; }
     #tenniswatch buttons {
