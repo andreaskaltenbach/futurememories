@@ -118,8 +118,6 @@ heading
     @extend separator-white
     border-color: $black
 
-
-
 summary
 
   > div
@@ -162,9 +160,6 @@ summary
       platforms
         justify-content: center
         padding-top: 71px
-
-
-
 
 #futurememories
   background-color: $black
@@ -225,27 +220,52 @@ summary
   color: $white
 
 #tenniswatch
-  @include background('TennisWatch-BG.jpg', center, center)
+  @include background('TennisWatch-BG.jpg', center, top)
   color: $white
 
-  laurel
-    width: 120px
-    height: 97px
-    background: url('../assets/laurel.png') no-repeat
-    text-align: center
-    display: block
-    @include roboto(400)
-    @include font-size(14)
-    letter-spacing: 1.34px
-    padding-top: 18px
-    float: left
-    margin: 30px 20px 0 0
+  laurels
+    display: flex
+    flex-direction: row
+    justify-content: flex-start
+
+    laurel
+      width: 120px
+      height: 97px
+      background: url('../assets/laurel.png') no-repeat
+      background-size: contain
+      text-align: center
+      @include roboto(400)
+      font-size: 13px
+      letter-spacing: 1.34px
+      padding-top: 18px
+      margin: 30px 20px 0 0
 
   clear-space
     margin: 46px
 
-  description a
-    margin-right: 50px
+  buttons
+    display: flex
+    flex-direction: row
+
+    a
+      margin: 0 50px 0 0
+
+  // compact mode
+  @media screen and (orientation: portrait), screen and (max-width: $threshold)
+    laurels
+      justify-content: center
+
+      laurel
+        margin-top: 108px
+
+    clear-space
+      margin: 26px
+
+    buttons
+      justify-content: center
+
+      a
+        margin: 0 25px
 
 hire
   display: flex
@@ -267,11 +287,9 @@ hire
     letter-spacing: 2px
     margin: 56px 0 0
 
-
     role
       align-self: flex-end
       flex-basis: 12%
-
 
       div
         margin: 12px 0
@@ -287,7 +305,6 @@ hire
     letter-spacing: 2px
     text-transform: uppercase
 
-
     a
       color: white
       display: inline-block
@@ -298,8 +315,8 @@ hire
       &:hover
         background-color: #000
         color: #0087CF
-        -webkit-transition: all .5s ease!important
-        transition: all .5s ease!important
+        -webkit-transition: all .5s ease !important
+        transition: all .5s ease !important
 
   // compact mode
   @media screen and (orientation: portrait), screen and (max-width: $threshold)

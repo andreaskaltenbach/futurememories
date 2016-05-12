@@ -172,30 +172,47 @@ summary > div {
       background-size: cover; } }
 
 #tenniswatch {
-  background: url("../assets/TennisWatch-BG.jpg") no-repeat center center;
+  background: url("../assets/TennisWatch-BG.jpg") no-repeat center top;
   background-size: cover;
   color: #fff; }
   @media screen and (orientation: portrait), screen and (max-width: 800px) {
     #tenniswatch {
       background: url("../assets/compact/TennisWatch-BG.jpg") no-repeat center center;
       background-size: cover; } }
-  #tenniswatch laurel {
-    width: 120px;
-    height: 97px;
-    background: url("../assets/laurel.png") no-repeat;
-    text-align: center;
-    display: block;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-size: 0.98vw;
-    letter-spacing: 1.34px;
-    padding-top: 18px;
-    float: left;
-    margin: 30px 20px 0 0; }
+  #tenniswatch laurels {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; }
+    #tenniswatch laurels laurel {
+      width: 120px;
+      height: 97px;
+      background: url("../assets/laurel.png") no-repeat;
+      background-size: contain;
+      text-align: center;
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      font-size: 13px;
+      letter-spacing: 1.34px;
+      padding-top: 18px;
+      margin: 30px 20px 0 0; }
   #tenniswatch clear-space {
     margin: 46px; }
-  #tenniswatch description a {
-    margin-right: 50px; }
+  #tenniswatch buttons {
+    display: flex;
+    flex-direction: row; }
+    #tenniswatch buttons a {
+      margin: 0 50px 0 0; }
+  @media screen and (orientation: portrait), screen and (max-width: 800px) {
+    #tenniswatch laurels {
+      justify-content: center; }
+      #tenniswatch laurels laurel {
+        margin-top: 108px; }
+    #tenniswatch clear-space {
+      margin: 26px; }
+    #tenniswatch buttons {
+      justify-content: center; }
+      #tenniswatch buttons a {
+        margin: 0 25px; } }
 
 hire {
   display: flex;
