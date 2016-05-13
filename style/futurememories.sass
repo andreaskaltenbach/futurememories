@@ -23,9 +23,24 @@ $font-scale-factor: 0.07
   font-family: 'Roboto', sans-serif
   font-weight: $weight
 
+.extended
+  display: block
+.compact
+  display: none
+
+// compact mode
+@media screen and (orientation: portrait), screen and (max-width: $threshold)
+  .extended
+    display: none
+  .compact
+    display: block
+
+
 @mixin background($image, $horizontal, $vertical)
   background: url('../assets/#{$image}') no-repeat $horizontal $vertical
   background-size: cover
+
+
 
   // compact mode
   @media screen and (orientation: portrait), screen and (max-width: $threshold)
@@ -172,8 +187,26 @@ summary
   min-height: 100vh
 
   logo
+    z-index: 10
     img
       @include img-responsive
+
+  overlay
+    position: absolute
+    height: 100%
+    width: 100%
+    bottom: 0
+    right: 0
+    top: 0
+
+    img
+      height: 100vh
+      position: absolute
+      right: 0
+      width: 50%
+      top: 0
+      bottom: 0
+
 
 #ourteam
 
@@ -372,7 +405,6 @@ team
       border-bottom: 1px solid
       padding: 70px 0
       flex-basis: auto
-
 
       &:last-child
         border-bottom: none
