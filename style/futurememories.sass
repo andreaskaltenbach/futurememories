@@ -4,8 +4,13 @@ $white: #fff
 $black: #101519
 $gray: #E8E8E8
 
-$section-padding: 10% 10%
-$section-padding-desktop: 70px 115px
+$top-bottom-padding: 70px
+
+$side-padding: 70px
+$side-padding-desktop: 115px
+
+$section-padding: $top-bottom-padding $side-padding
+$section-padding-desktop: $top-bottom-padding $side-padding-desktop
 
 $case-heading-heading-spacing: 11px
 $case-heading-separator-spacing: 22px
@@ -122,6 +127,9 @@ section
     clear-space
       margin: 34px
 
+    marginal-clear-space
+      margin: 40px
+
 heading
 
   separator-white
@@ -190,6 +198,13 @@ buttons
 
   a
     margin: 0 50px 0 0
+
+  // compact mode
+  @media screen and (orientation: portrait), screen and (max-width: $threshold)
+    justify-content: center
+    a
+      margin: 0 25px
+
 
 #futurememories
   background-color: $black
@@ -302,12 +317,6 @@ buttons
     clear-space
       margin: 26px
 
-    buttons
-      justify-content: center
-
-      a
-        margin: 0 25px
-
 #wya
   color: $white
   background: #0b2335
@@ -317,8 +326,15 @@ buttons
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0b2335', endColorstr='#31414d', GradientType=0)
 
   .screens
-    margin: 20px -115px -70px -115px
+    margin-top: 20px
+    margin-left: -$side-padding-desktop
+    margin-bottom: -$top-bottom-padding
+    margin-right: -$side-padding-desktop
 
+    // compact mode
+    @media screen and (orientation: portrait), screen and (max-width: $threshold)
+      margin-left: -$side-padding
+      margin-right: -$side-padding
 
     img
       width: 100%
@@ -425,7 +441,7 @@ team
     padding: 0 23%
 
     member
-      border-bottom: 1px solid
+      border-bottom: 1px solid rgba(0, 0, 0, .2)
       padding: 70px 0
       flex-basis: auto
 
