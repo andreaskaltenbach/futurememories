@@ -25,6 +25,7 @@ $font-scale-factor: 0.07
 
 .extended
   display: block
+
 .compact
   display: none
 
@@ -35,12 +36,9 @@ $font-scale-factor: 0.07
   .compact
     display: block
 
-
 @mixin background($image, $horizontal, $vertical)
   background: url('../assets/#{$image}') no-repeat $horizontal $vertical
   background-size: cover
-
-
 
   // compact mode
   @media screen and (orientation: portrait), screen and (max-width: $threshold)
@@ -106,6 +104,9 @@ section
   clear-space
     margin: 135px
 
+  marginal-clear-space
+    margin: 20px
+
   visuals
     margin: 115px auto
     img
@@ -138,13 +139,13 @@ summary
   > div
     display: flex
     flex-direction: row
-    justify-content: space-between
+    justify-content: flex-start
 
     description
       @include roboto(300)
       @include font-size(20)
       line-height: 145%
-      max-width: 50%
+      max-width: 43%
       display: flex
       flex-direction: column
       justify-content: flex-end
@@ -159,6 +160,13 @@ summary
       display: flex
       justify-content: flex-start
       width: 100%
+      max-width: 50%
+
+      // compact mode
+      @media screen and (orientation: portrait), screen and (max-width: $threshold)
+        max-width: none
+
+
 
       img
         max-width: 100%
@@ -175,6 +183,13 @@ summary
       platforms
         justify-content: center
         padding-top: 71px
+
+buttons
+  display: flex
+  flex-direction: row
+
+  a
+    margin: 0 50px 0 0
 
 #futurememories
   background-color: $black
@@ -206,7 +221,6 @@ summary
       width: 50%
       top: 0
       bottom: 0
-
 
 #ourteam
 
@@ -276,13 +290,6 @@ summary
   clear-space
     margin: 46px
 
-  buttons
-    display: flex
-    flex-direction: row
-
-    a
-      margin: 0 50px 0 0
-
   // compact mode
   @media screen and (orientation: portrait), screen and (max-width: $threshold)
     laurels
@@ -300,6 +307,22 @@ summary
 
       a
         margin: 0 25px
+
+#wya
+  color: $white
+  background: #0b2335
+  background: -moz-linear-gradient(top, #0b2335 0%, #31414d 100%)
+  background: -webkit-linear-gradient(top, #0b2335 0%, #31414d 100%)
+  background: linear-gradient(to bottom, #0b2335 0%, #31414d 100%)
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0b2335', endColorstr='#31414d', GradientType=0)
+
+  .screens
+    margin: 20px -115px -70px -115px
+
+
+    img
+      width: 100%
+
 
 hire
   display: flex
