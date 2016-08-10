@@ -325,24 +325,27 @@ buttons
   background: linear-gradient(to bottom, #0b2335 0%, #31414d 100%)
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0b2335', endColorstr='#31414d', GradientType=0)
 
+
+  .screens
+    margin-top: 20px
+    margin-left: -$side-padding-desktop
+    margin-bottom: -$top-bottom-padding-desktop
+    margin-right: -$side-padding-desktop
+
+    img
+      width: 100%
+
   // compact mode
   @media screen and (max-width: $threshold)
 
     .screens
       margin-left: -$side-padding
       margin-right: -$side-padding
-
-      img
-        width: 100%
+      margin-bottom: -$top-bottom-padding
 
     marginal-clear-space
       margin: 22px
 
-  .screens
-    margin-top: 20px
-    margin-left: -$side-padding-desktop
-    margin-bottom: -$top-bottom-padding
-    margin-right: -$side-padding-desktop
 
 hire
   display: flex
