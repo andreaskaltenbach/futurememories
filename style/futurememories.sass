@@ -319,7 +319,6 @@ buttons
 
       laurel
         zoom: 50%
-        margin: 0
         font-size: 15px
         padding-top: 16px
         margin: 0 10px
@@ -448,8 +447,7 @@ team
 
     phone
       font-size: 1.4vw
-      font-family: "Roboto",sans-serif
-      font-weight: 400
+      @include roboto(400)
       padding: 17px 0 23px
 
     a
@@ -480,7 +478,7 @@ team
         @include font-size(46)
 
 #social
-  background-color: $black
+  background-color: #000
   padding: 35px 0
 
   div
@@ -491,20 +489,22 @@ team
   a
     margin: 35px
 
-    // compact mode
-    @media  screen and (max-width: $threshold)
+  // compact mode
+  @media  screen and (max-width: $threshold)
+
+    padding: 8px 0
+
+    a
       margin: 8px
 
       img
         zoom: 50%
 
-
 hello
   a
     @include font-size(40)
     @include raleway(300)
-    background-color: black
-    color: $white
+    color: #000
     display: inline-block
     width: 100%
     padding: 26px 0 32px
