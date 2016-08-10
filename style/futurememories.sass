@@ -195,6 +195,9 @@ summary
         justify-content: center
         padding-top: 71px
 
+        img
+          zoom: 50%
+
 buttons
   display: flex
   flex-direction: row
@@ -206,10 +209,14 @@ buttons
   @media screen and (orientation: portrait), screen and (max-width: $threshold)
     justify-content: center
     a
-      margin: 0 25px
+      margin: 0px 12px
+
+    img
+      zoom: 50%
 
 
 #futurememories
+  margin-top: 0
   background-color: $black
   display: flex
   align-items: center
@@ -305,20 +312,23 @@ buttons
       padding-top: 18px
       margin: 30px 20px 0 0
 
-  clear-space
-    margin: 46px
-
-  // compact mode
-  @media screen and (orientation: portrait), screen and (max-width: $threshold)
-    laurels
+    // compact mode
+    @media screen and (orientation: portrait), screen and (max-width: $threshold)
       justify-content: center
+      padding-top: 53px
 
       laurel
-        margin: 108px 10px 0 10px
-        @include font-size(24)
+        zoom: 50%
+        margin: 0
+        font-size: 15px
+        padding-top: 16px
+        margin: 0 10px
 
-    clear-space
-      margin: 26px
+
+
+  clear-space
+    margin: 16px
+
 
 #wya
   color: $white
