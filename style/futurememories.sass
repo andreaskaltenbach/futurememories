@@ -35,7 +35,7 @@ $font-scale-factor: 0.07
   display: none
 
 // compact mode
-@media screen and (orientation: portrait), screen and (max-width: $threshold)
+@media  screen and (max-width: $threshold)
   .extended
     display: none
   .compact
@@ -46,7 +46,7 @@ $font-scale-factor: 0.07
   background-size: cover
 
   // compact mode
-  @media screen and (orientation: portrait), screen and (max-width: $threshold)
+  @media  screen and (max-width: $threshold)
     background: url('../assets/compact/#{$image}') no-repeat center center
     background-size: cover
 
@@ -93,7 +93,7 @@ h4
   margin: $case-heading-heading-spacing 0 $case-heading-separator-spacing 0
 
 // compact mode
-@media screen and (orientation: portrait), screen and (max-width: $threshold)
+@media  screen and (max-width: $threshold)
   h2
     @include font-size(38)
 
@@ -121,7 +121,7 @@ section
       @include img-responsive()
 
   // compact mode
-  @media screen and (orientation: portrait), screen and (max-width: $threshold)
+  @media  screen and (max-width: $threshold)
     padding: $section-padding
 
     visuals
@@ -174,7 +174,7 @@ summary
       max-width: 50%
 
       // compact mode
-      @media screen and (orientation: portrait), screen and (max-width: $threshold)
+      @media  screen and (max-width: $threshold)
         max-width: none
 
 
@@ -186,7 +186,7 @@ summary
         padding: 0 2%
 
     // compact mode
-    @media screen and (orientation: portrait), screen and (max-width: $threshold)
+    @media  screen and (max-width: $threshold)
       flex-direction: column-reverse
       description
         @include font-size(50)
@@ -206,7 +206,7 @@ buttons
     margin: 0 50px 0 0
 
   // compact mode
-  @media screen and (orientation: portrait), screen and (max-width: $threshold)
+  @media  screen and (max-width: $threshold)
     justify-content: center
     a
       margin: 0px 12px
@@ -313,7 +313,7 @@ buttons
       margin: 30px 20px 0 0
 
     // compact mode
-    @media screen and (orientation: portrait), screen and (max-width: $threshold)
+    @media  screen and (max-width: $threshold)
       justify-content: center
       padding-top: 53px
 
@@ -345,7 +345,7 @@ buttons
     margin-right: -$side-padding-desktop
 
     // compact mode
-    @media screen and (orientation: portrait), screen and (max-width: $threshold)
+    @media  screen and (max-width: $threshold)
       margin-left: -$side-padding
       margin-right: -$side-padding
 
@@ -405,7 +405,7 @@ hire
         transition: all .5s ease !important
 
   // compact mode
-  @media screen and (orientation: portrait), screen and (max-width: $threshold)
+  @media  screen and (max-width: $threshold)
     roles
       @include font-size(40)
 
@@ -449,7 +449,7 @@ team
       padding: 0 18px
 
   // compact mode
-  @media screen and (orientation: portrait), screen and (max-width: $threshold)
+  @media  screen and (max-width: $threshold)
     flex-direction: column
     padding: 0 23%
 
@@ -481,7 +481,7 @@ hello
     letter-spacing: 4.13px
 
     // compact mode
-    @media screen and (orientation: portrait), screen and (max-width: $threshold)
+    @media  screen and (max-width: $threshold)
       @include font-size(70)
 
 
