@@ -421,14 +421,17 @@ team
   color: $black
   background-color: #E8E8E8
   justify-content: space-around
-  padding: 124px 115px 100px
+  padding: 90px 115px 65px
+  flex-wrap: wrap
 
   member
     display: flex
     flex-direction: column
     text-align: center
+    flex-basis: 50%
+    align-items: center
+    padding: 35px 0
 
-    flex-basis: 25%
 
     name
       @include font-size(20)
@@ -440,7 +443,14 @@ team
       flex-grow: 2
       @include font-size(20)
       @include roboto(300)
-      padding: 24px 0 33px
+      padding: 24px 0 0 0
+      width: 291px
+
+    phone
+      font-size: 1.4vw
+      font-family: "Roboto",sans-serif
+      font-weight: 400
+      padding: 17px 0 23px
 
     a
       text-decoration: none
