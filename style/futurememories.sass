@@ -22,8 +22,8 @@ $font-scale-factor: 0.07
 @mixin font-size($designSize)
   font-size: $designSize*$font-scale-factor+vw
 
-@mixin raleway($weight)
-  font-family: 'Raleway', sans-serif
+@mixin lato($weight)
+  font-family: 'Lato', sans-serif
   font-weight: $weight
 
 @mixin roboto($weight)
@@ -68,28 +68,28 @@ h1
   display: none
 
 h2
-  @include raleway(800)
+  @include lato(700)
   @include font-size(23)
   text-align: center
   padding-top: 5%
   text-transform: uppercase
-  letter-spacing: 2.4px
+  letter-spacing: 4.2px
   color: $white
 
   opacity: 0.15
 
 h3
-  @include raleway(700)
+  @include lato(700)
   @include font-size(40)
-  letter-spacing: 4px
+  letter-spacing: 6px
   text-transform: uppercase
   padding: 0
   margin: 0
 
 h4
-  @include raleway(200)
+  @include lato(300)
   @include font-size(40)
-  letter-spacing: 4px
+  letter-spacing: 6px
   text-transform: uppercase
   padding: 0
   margin: $case-heading-heading-spacing 0 $case-heading-separator-spacing 0
@@ -167,7 +167,8 @@ summary
         margin: 5% 0 0 0
 
       strong
-        @include roboto(400)
+        @include lato(400)
+        letter-spacing: 1.6px
 
     platforms
       display: flex
@@ -197,9 +198,6 @@ summary
       platforms
         justify-content: center
         padding-top: 71px
-
-
-
 
 buttons
   display: flex
@@ -277,11 +275,11 @@ buttons
       background-color: $white
 
       name
-        @include raleway(600)
+        @include lato(600)
         @include font-size(40)
 
       role
-        @include raleway(200)
+        @include lato(200)
         @include font-size(30)
 
 #nelly
@@ -339,7 +337,6 @@ buttons
   background: linear-gradient(to bottom, #0b2335 0%, #31414d 100%)
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0b2335', endColorstr='#31414d', GradientType=0)
 
-
   .screens
     margin-top: 20px
     margin-left: -$side-padding-desktop
@@ -360,7 +357,6 @@ buttons
     marginal-clear-space
       margin: 22px
 
-
 hire
   display: flex
   flex-direction: column
@@ -376,9 +372,9 @@ hire
     text-align: center
 
   roles
-    @include raleway(200)
+    @include lato(200)
     @include font-size(20)
-    letter-spacing: 2px
+    letter-spacing: 3px
     margin: 56px 0 0
 
     role
@@ -394,7 +390,7 @@ hire
   contact
     background-color: #0087CF
     text-align: center
-    @include raleway(700)
+    @include lato(700)
     @include font-size(18)
     letter-spacing: 2px
     text-transform: uppercase
@@ -442,9 +438,9 @@ team
 
     name
       @include font-size(20)
-      @include raleway(600)
+      @include lato(600)
       text-transform: uppercase
-      letter-spacing: 2.05px
+      letter-spacing: 2.85px
 
     description
       flex-grow: 2
@@ -508,18 +504,17 @@ team
     img
       zoom: 50%
 
-
 hello
   a
     @include font-size(40)
-    @include raleway(300)
+    @include lato(300)
     color: #000
     display: inline-block
     width: 100%
     padding: 26px 0 32px
     text-decoration: none
     text-align: center
-    letter-spacing: 4.13px
+    letter-spacing: 4.83px
 
     // compact mode
     @media screen and (max-width: $threshold)
