@@ -100,7 +100,11 @@ h4
     @include font-size(38)
 
   h3, h4
-    @include font-size(66)
+    @include font-size(84)
+    letter-spacing: 2px
+
+  h4
+    margin: 6px 0 13px 0
 
 section, team
   margin-top: 10px
@@ -130,7 +134,7 @@ section
       margin: 70px auto
 
     clear-space
-      margin: 34px
+      margin: 27px
 
     marginal-clear-space
       margin: 40px
@@ -142,6 +146,11 @@ heading
     display: block
     border-bottom: 3px solid $white
     border-color: $white
+
+    // compact mode
+    @media screen and (max-width: $threshold)
+      width: 42px
+      border-bottom: 1.5px solid $white
 
   separator-black
     @extend separator-white
@@ -165,6 +174,9 @@ summary
 
       p
         margin: 5% 0 0 0
+
+      p:first-child
+        margin-top: 0
 
       strong
         @include lato(400)
@@ -196,11 +208,15 @@ summary
     @media screen and (max-width: $threshold)
       flex-direction: column-reverse
       description
-        @include font-size(50)
+        @include font-size(48)
         max-width: none
+
+        strong
+          letter-spacing: 0
+
       platforms
         justify-content: center
-        padding-top: 71px
+        padding-top: 35px
 
         img:first-child
           padding-left: 2%
@@ -292,6 +308,11 @@ buttons
   @include background('nelly.jpg', right, bottom)
   color: $white
 
+  // compact mode
+  @media screen and (max-width: $threshold)
+    clear-space
+      margin: 50px
+
 #predicare
   @include background('Predicare.jpg', right, bottom)
   color: $white
@@ -299,6 +320,11 @@ buttons
 #stena
   @include background('StenaBg.jpg', right, bottom)
   color: $white
+
+  // compact mode
+  @media screen and (max-width: $threshold)
+    clear-space
+      margin: 58px
 
 #railway
   @include background('SKF_BG.jpg', right, bottom)
