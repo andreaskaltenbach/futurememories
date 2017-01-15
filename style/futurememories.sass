@@ -152,7 +152,7 @@ summary
   > div
     display: flex
     flex-direction: row
-    justify-content: flex-start
+    justify-content: space-between
 
     description
       @include roboto(300)
@@ -189,6 +189,9 @@ summary
         align-self: flex-end
         padding: 0 2%
 
+      img:first-child
+        padding-left: 0
+
     // compact mode
     @media screen and (max-width: $threshold)
       flex-direction: column-reverse
@@ -198,6 +201,9 @@ summary
       platforms
         justify-content: center
         padding-top: 71px
+
+        img:first-child
+          padding-left: 2%
 
 buttons
   display: flex
