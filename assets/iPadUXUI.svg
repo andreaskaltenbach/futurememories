@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="143px" height="210px" viewBox="0 0 143 210" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>iPad wires</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="9 21 9 188 134 188 134 21"></polygon>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="125" height="167" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <path d="M143,10 C143,4.53956009 138.426951,0 132.929577,0 L10.0704225,0 C4.57304921,0 0,4.53956009 0,10 L0,200 C0,205.46044 4.57304921,210 10.0704225,210 L132.929577,210 C138.426951,210 143,205.46044 143,200 L143,10 Z" id="path-3"></path>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="143" height="210" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+    </defs>
+    <g id="FM-site" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-13-15&quot;-Website-4.1" transform="translate(-115.000000, -2591.000000)">
+            <g id="Predicare" transform="translate(0.000000, 2122.000000)">
+                <g id="iPad-wires" transform="translate(115.000000, 469.000000)">
+                    <use id="Inner-screen" stroke="#FFFFFF" mask="url(#mask-2)" stroke-width="2" xlink:href="#path-1"></use>
+                    <use id="Hull" stroke="#FFFFFF" mask="url(#mask-4)" stroke-width="2" xlink:href="#path-3"></use>
+                    <path d="M72,194 C69.2429892,194 67,196.243007 67,199 C67,201.756993 69.2429892,204 72,204 C74.7570108,204 77,201.756993 77,199 C77,196.243007 74.7570108,194 72,194" id="Button" stroke="#FFFFFF"></path>
+                    <path d="M71.6616396,8.21533257 C70.9971005,8.21533257 70.4565196,8.75516544 70.4565196,9.41871 C70.4565196,10.0821796 70.9971005,10.6220874 71.6616396,10.6220874 C72.3261037,10.6220874 72.8666096,10.0821796 72.8666096,9.41871 C72.8666096,8.75516544 72.3261037,8.21533257 71.6616396,8.21533257" id="Camera" fill="#FFFFFF"></path>
+                    <text id="UX/UI" opacity="0.75" font-family="Lato-Regular, Lato" font-size="20" font-weight="normal" fill="#FFFFFF">
+                        <tspan x="44.17" y="112">UX/UI</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

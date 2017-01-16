@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="49px" viewBox="0 0 30 49" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Lnkd</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="50%" cy="50%" fx="50%" fy="50%" r="50%" id="radialGradient-1">
+            <stop stop-color="#000000" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0" offset="100%"></stop>
+        </radialGradient>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="0.920840993" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <path d="M15,0 C6.71574608,0 0,6.75509236 0,15.0873265 L0,15.0873265 C0,23.4200582 7.11368508,43 15,43 L15,43 C22.8863149,43 30,23.4200582 30,15.0873265 L30,15.0873265 C30,6.75509236 23.2842539,0 15,0 L15,0 Z M8.46153846,14.9733402 C8.46153846,11.368682 11.3892153,8.44642857 15,8.44642857 L15,8.44642857 C18.6110369,8.44642857 21.5384615,11.368682 21.5384615,14.9733402 L21.5384615,14.9733402 C21.5384615,18.5779984 18.6110369,21.5 15,21.5 L15,21.5 C11.3892153,21.5 8.46153846,18.5779984 8.46153846,14.9733402 L8.46153846,14.9733402 Z" id="path-3"></path>
+    </defs>
+    <g id="FM-site" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-13-15&quot;-Website-4.1" transform="translate(-1005.000000, -8256.000000)">
+            <g id="Contacts" transform="translate(0.000000, 7731.000000)">
+                <g id="Mikael" transform="translate(874.000000, 352.000000)">
+                    <g id="Lnkd" transform="translate(131.000000, 173.000000)">
+                        <g id="Black-pin">
+                            <g>
+                                <ellipse id="Oval-44" fill="url(#radialGradient-1)" opacity="0.249999985" filter="url(#filter-2)" cx="15" cy="44" rx="13" ry="4"></ellipse>
+                                <g id="Pinne">
+                                    <mask id="mask-4" fill="white">
+                                        <use xlink:href="#path-3"></use>
+                                    </mask>
+                                    <use id="Pin" fill="#000000" xlink:href="#path-3"></use>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

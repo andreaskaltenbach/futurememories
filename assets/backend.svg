@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="210px" height="170px" viewBox="0 0 210 170" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Wire desktop screen</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M8,8 L8,118 L201.998697,118 C202.001524,117.940232 201.973562,8.03128142 201.998697,8 C201.917555,7.99974911 8,8 8,8 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="193.998901" height="110.000112" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <path d="M5,0 C2.22545181,0 0,2.18114563 0,5 L0,141 C0,143.537667 2.22545181,145.792744 5,146 L82,146 L79,161 L71,168 L71,169 C70.8855422,169.383243 71.2237771,170 72,170 L138,170 C138.620157,170 138.738313,169.934391 139,170 C138.975681,169.672251 138.945404,169.409858 139,169 C138.916265,169.110584 139,168 139,168 L131,161 L128,146 L205,146 C207.797404,145.792744 210,143.537667 210,141 L210,5 C210,2.18114563 207.797404,0 205,0 L5,0 Z" id="path-3"></path>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="210" height="170" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+    </defs>
+    <g id="FM-site" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-13-15&quot;-Website-4.1" transform="translate(-221.000000, -6781.000000)">
+            <g id="WYA" transform="translate(0.000000, 6387.000000)">
+                <g id="Wire-desktop-screen" transform="translate(221.000000, 394.000000)">
+                    <use id="Inner-screen" stroke="#FFFFFF" mask="url(#mask-2)" stroke-width="2" xlink:href="#path-1"></use>
+                    <path d="M105.034112,3.41885883 C104.629609,3.41885883 104.300527,3.74869463 104.300527,4.15412043 C104.300527,4.55941962 104.629609,4.88917101 105.034112,4.88917101 C105.438656,4.88917101 105.767738,4.55941962 105.767738,4.15412043 C105.767738,3.74869463 105.438656,3.41885883 105.034112,3.41885883" id="Camera" fill="#000000"></path>
+                    <use id="Hull" stroke="#FFFFFF" mask="url(#mask-4)" stroke-width="2" xlink:href="#path-3"></use>
+                    <path d="M82.5,145.5 L127.5,145.5" id="Line" stroke="#FFFFFF" stroke-linecap="square"></path>
+                    <path d="M0.5,125.5 L209.502396,125.5" id="Line" stroke="#FFFFFF" stroke-linecap="square"></path>
+                    <text id="BackEnd" font-family="Lato-Regular, Lato" font-size="20" font-weight="normal" fill-opacity="0.75" fill="#FFFFFF">
+                        <tspan x="66.59" y="59">BackEnd</tspan>
+                        <tspan x="77.17" y="83">UX/UI</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
