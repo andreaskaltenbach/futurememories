@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="113px" height="94px" viewBox="0 0 113 94" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>SketchLogo</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="50%" cy="28.2951328%" fx="50%" fy="28.2951328%" r="115.533809%" gradientTransform="translate(0.500000,0.282951),scale(0.578488,1.000000),rotate(90.000000),translate(-0.500000,-0.282951)" id="radialGradient-1">
+            <stop stop-color="#FD7C00" offset="0%"></stop>
+            <stop stop-color="#F35300" offset="100%"></stop>
+        </radialGradient>
+        <radialGradient cx="50%" cy="2.49758199%" fx="50%" fy="2.49758199%" r="82.8256462%" gradientTransform="translate(0.500000,0.024976),scale(1.000000,0.993795),rotate(90.000000),translate(-0.500000,-0.024976)" id="radialGradient-2">
+            <stop stop-color="#FDCE21" offset="0%"></stop>
+            <stop stop-color="#FDA500" offset="100%"></stop>
+        </radialGradient>
+        <linearGradient x1="79.5918367%" y1="81.25%" x2="30.8540604%" y2="50%" id="linearGradient-3">
+            <stop stop-color="#FDD12B" offset="0%"></stop>
+            <stop stop-color="#FDC003" offset="100%"></stop>
+        </linearGradient>
+        <radialGradient cx="50%" cy="0%" fx="50%" fy="0%" r="100%" gradientTransform="translate(0.500000,0.000000),scale(0.558752,1.000000),rotate(90.000000),translate(-0.500000,-0.000000)" id="radialGradient-4">
+            <stop stop-color="#FEF3CB" offset="0%"></stop>
+            <stop stop-color="#FEDD67" offset="100%"></stop>
+        </radialGradient>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-5">
+            <stop stop-color="#FC8900" offset="0%"></stop>
+            <stop stop-color="#FCAA00" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-46.4%" y="-147.1%" width="192.8%" height="394.1%" filterUnits="objectBoundingBox" id="filter-6">
+            <feGaussianBlur stdDeviation="10.1789709" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="FM-site" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-13-15&quot;-Website-4.2" transform="translate(-584.000000, -988.000000)">
+            <g id="Now-hiring" transform="translate(0.000000, 821.000000)">
+                <g id="SketchLogo" transform="translate(590.000000, 170.000000)">
+                    <g id="Bottom-Back" transform="translate(0.000000, 32.572707)" fill="url(#radialGradient-1)">
+                        <polygon id="Polygon" transform="translate(50.500000, 29.213647) rotate(-180.000000) translate(-50.500000, -29.213647) " points="50.5 -2.27373675e-13 101 58.4272931 -5.68434189e-14 58.4272931"></polygon>
+                    </g>
+                    <g id="Bottom-Mid" transform="translate(20.445344, 32.572707)">
+                        <polygon id="Polygon" fill="#FDCA0D" transform="translate(30.054656, 29.213647) rotate(-180.000000) translate(-30.054656, -29.213647) " points="30.0546559 0 60.1093117 58.4272931 -5.68434189e-14 58.4272931"></polygon>
+                        <polygon id="Polygon" fill="url(#radialGradient-2)" transform="translate(30.054656, 29.213647) rotate(-180.000000) translate(-30.054656, -29.213647) " points="30.0546559 0 59.0870445 58.4272931 1.02226721 58.4272931"></polygon>
+                    </g>
+                    <g id="Top-Left" transform="translate(20.445344, 0.000000)" fill="url(#linearGradient-3)">
+                        <polygon id="Polygon" transform="translate(15.027328, 16.286353) rotate(-180.000000) translate(-15.027328, -16.286353) " points="28.6234818 29.5190157 30.0546559 3.0127012e-12 2.27373675e-13 32.5727069"></polygon>
+                    </g>
+                    <g id="Top-Right" transform="translate(50.500000, 0.000000)" fill="url(#linearGradient-3)">
+                        <polygon id="Polygon" transform="translate(15.027328, 16.286353) scale(-1, 1) rotate(-180.000000) translate(-15.027328, -16.286353) " points="28.6234818 29.5190157 30.0546559 0 5.68434189e-14 32.5727069"></polygon>
+                    </g>
+                    <g id="Top-Mid" transform="translate(20.445344, 0.000000)">
+                        <polygon id="Polygon" fill="#FEFBED" transform="translate(30.054656, 16.286353) rotate(-180.000000) translate(-30.054656, -16.286353) " points="30.0546559 32.5727069 60.1093117 4.49551408e-13 2.84217094e-13 -1.13686838e-13"></polygon>
+                        <polygon id="Polygon" fill="url(#radialGradient-4)" transform="translate(30.054656, 15.879195) rotate(-180.000000) translate(-30.054656, -15.879195) " points="30.0546559 31.7583893 58.4736842 7.18490641e-13 1.63562753 -5.68434189e-14"></polygon>
+                    </g>
+                    <g id="Top-Side-Left" transform="translate(0.000000, 3.053691)">
+                        <polygon id="Polygon" fill="#FEE693" transform="translate(10.938259, 14.759508) rotate(-180.000000) translate(-10.938259, -14.759508) " points="-1.98951966e-13 29.5190157 11.2449393 14.6577181 21.8765182 4.87047638e-13 0.408906883 -5.68434189e-14"></polygon>
+                        <polygon id="Polygon" fill="url(#linearGradient-5)" transform="translate(10.938259, 14.759508) rotate(-180.000000) translate(-10.938259, -14.759508) " points="-1.98951966e-13 29.5190157 21.8765182 1.70530257e-13 1.43117409 0.814317673"></polygon>
+                    </g>
+                    <g id="Top-Side-Right" transform="translate(90.000000, 18.053691) scale(-1, 1) translate(-90.000000, -18.053691) translate(79.000000, 3.053691)">
+                        <polygon id="Polygon" fill="#FEE693" transform="translate(10.938259, 14.759508) rotate(-180.000000) translate(-10.938259, -14.759508) " points="-5.68434189e-14 29.5190157 11.2449393 14.6577181 21.8765182 3.733608e-13 0.408906883 -1.70530257e-13"></polygon>
+                        <polygon id="Polygon" fill="url(#linearGradient-5)" transform="translate(10.938259, 14.759508) rotate(-180.000000) translate(-10.938259, -14.759508) " points="-2.84217094e-13 29.5190157 21.8765182 1.70530257e-13 1.43117409 0.814317673"></polygon>
+                    </g>
+                    <ellipse id="Highlight" fill="#FFFFFF" opacity="0.100000001" filter="url(#filter-6)" cx="50.5" cy="32.5727069" rx="32.917004" ry="10.3825503"></ellipse>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
